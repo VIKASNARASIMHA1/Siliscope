@@ -1,0 +1,11 @@
+pattern,policy,kernel_major,sim_major,opt_major
+hot-set,FIFO,489,489,153
+hot-set,CLOCK,287,287,153
+hot-set,LRU-aging,339,339,153
+hot-set,RANDOM,475,475,153
+hot-set,LRU-exact,-1,289,153
+loop,FIFO,2370,2370,486
+loop,CLOCK,2370,2370,486
+loop,LRU-aging,2370,2370,486
+loop,RANDOM,895,895,486
+loop,LRU-exact,-1,2370,486

@@ -1,0 +1,12 @@
+RESULT lazy mode=eager reserved_pages=8192 touched_pages=512 frames_used=8193 frames_left_after_free=1 ok=1
+RESULT lazy mode=lazy reserved_pages=8192 touched_pages=512 frames_used=512 frames_left_after_free=0 ok=1
+RESULT swap policy=FIFO pattern=hot-set refs=2400 minor_faults=64 major_faults=489 swap_outs=529 corrupt=0
+RESULT swap policy=CLOCK pattern=hot-set refs=2400 minor_faults=64 major_faults=287 swap_outs=327 corrupt=0
+RESULT swap policy=LRU-aging pattern=hot-set refs=2400 minor_faults=64 major_faults=339 swap_outs=379 corrupt=0
+RESULT swap policy=RANDOM pattern=hot-set refs=2400 minor_faults=64 major_faults=475 swap_outs=515 corrupt=0
+RESULT swap policy=FIFO pattern=loop refs=2400 minor_faults=30 major_faults=2370 swap_outs=2376 corrupt=0
+RESULT swap policy=CLOCK pattern=loop refs=2400 minor_faults=30 major_faults=2370 swap_outs=2376 corrupt=0
+RESULT swap policy=LRU-aging pattern=loop refs=2400 minor_faults=30 major_faults=2370 swap_outs=2376 corrupt=0
+RESULT swap policy=RANDOM pattern=loop refs=2400 minor_faults=30 major_faults=895 swap_outs=901 corrupt=0
+RESULT sched policy=RR short_turnaround_x10=100 long_turnaround_x10=490 interactive_wait_x100=206 interactive_max_wait=4 total_ticks=49
+RESULT sched policy=MLFQ short_turnaround_x10=25 long_turnaround_x10=473 interactive_wait_x100=6 interactive_max_wait=1 total_ticks=50

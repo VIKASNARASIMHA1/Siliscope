@@ -1,0 +1,9 @@
+policy,pattern,refs,minor_faults,major_faults,swap_outs,corrupt
+FIFO,hot-set,2400,64,489,529,0
+CLOCK,hot-set,2400,64,287,327,0
+LRU-aging,hot-set,2400,64,339,379,0
+RANDOM,hot-set,2400,64,475,515,0
+FIFO,loop,2400,30,2370,2376,0
+CLOCK,loop,2400,30,2370,2376,0
+LRU-aging,loop,2400,30,2370,2376,0
+RANDOM,loop,2400,30,895,901,0

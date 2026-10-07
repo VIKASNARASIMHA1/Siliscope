@@ -1,0 +1,3 @@
+mode,reserved_pages,touched_pages,frames_used,frames_left_after_free,ok
+eager,8192,512,8193,1,1
+lazy,8192,512,512,0,1

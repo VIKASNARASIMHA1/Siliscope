@@ -1,0 +1,9 @@
+[package]
+name = "rvsim"
+version = "1.0.0"
+edition = "2021"
+description = "RISC-V RV64IMAC full-system emulator with MMU, devices and a microarchitecture analyzer"
+
+[[bin]]
+name = "rvsim"
+path = "src/main.rs"

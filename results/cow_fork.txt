@@ -1,0 +1,8 @@
+Fork benchmark: 20 forks of a ~2 MiB process; each child writes one page.
+
+fork strategy       instructions    modelled cycles    pages used per fork        ticks
+copy-on-write            5555599           17966807                      5            6
+eager copy              64815832          300291750                    526           41
+
+Whole-run speedup (instructions): 11.67x   (modelled cycles): 16.71x
+(Both runs include the same boot and shell start-up cost, so the fork-only speedup is larger.)

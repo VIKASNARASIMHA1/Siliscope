@@ -1,0 +1,3 @@
+policy,short_turnaround_x10,long_turnaround_x10,interactive_wait_x100,interactive_max_wait,total_ticks
+RR,100,490,206,4,49
+MLFQ,25,473,6,1,50

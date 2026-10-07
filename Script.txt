@@ -1,0 +1,5 @@
+cd $HOME\Desktop\rvsim
+Set-ExecutionPolicy -Scope Process Bypass
+.\rvsim.ps1 test
+
+.\rvsim.ps1 run

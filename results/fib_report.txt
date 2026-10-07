@@ -1,0 +1,29 @@
+fib(27)=196418 ok
+
+==================== rvsim performance report ====================
+Instructions retired : 7506320
+Mix                  : load 16.9%  store 16.9%  cond-branch 8.5%  jal/jalr 8.5%  mul 0.0%  div 0.0%  amo 0.0%  csr/sys 0.0%
+
+--- 5-stage pipeline model ---
+Base cycles (1/instr)   : 7506320
+Load-use stalls         : 20
+Mul/div latency         : 24
+Jump bubbles            : 1271260
+I-cache stall cycles    : 672
+D-cache stall cycles    : 1904
+
+--- Branch prediction (635667 conditional branches, 38.2% taken) ---
+predictor           accuracy  mispredicts      CPI
+static-not-taken      61.80%       242806    1.234
+static-btfn           50.00%       317834    1.254
+bimodal-1024          50.00%       317817    1.254
+bimodal-4096          50.00%       317817    1.254
+gshare-10b            92.45%        48012    1.183
+gshare-14b            95.44%        28958    1.177
+
+--- Cache hierarchy ---
+L1I   16 KiB 4-way 64B : accesses    7506320  miss rate   0.00%  AMAT 1.00 cycles
+L1D   16 KiB 4-way 64B : accesses    2542557  miss rate   0.00%  AMAT 1.00 cycles
+L2   256 KiB 8-way 64B : accesses         23  miss rate 100.00%  writebacks 0
+(latencies: L1 hit 1, L2 hit 12, memory 100 cycles)
+====================================================================
