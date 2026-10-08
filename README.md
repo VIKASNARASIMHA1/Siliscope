@@ -413,28 +413,3 @@ Edit these and rebuild (`.\rvsim.ps1 test` rebuilds automatically):
 | Typed input appears twice | The host terminal echoes input; the guest kernel does not. Report it if you see doubling |
 
 ---
-
-## Ideas for extending it
-
-- Copy-on-write sharing of swapped pages, or automatic memory-pressure-driven swapping
-- A GDB remote stub to debug the guest kernel line by line
-- Floating-point (F/D) extension, to become full RV64GC
-- An out-of-order (Tomasulo) timing model next to the in-order one
-- SMP with a spinlocked kernel
-- Boot xv6 or a minimal Linux on the emulator
-- A decoded-instruction cache or JIT, measuring the emulator speed-up
-
-Contributions and issues are welcome. If you add a feature, please add a test (a `ktest` case or a Rust unit test) and keep `rvsim test` green.
-
----
-
-## License and acknowledgements
-
-Released under the **MIT License** (see [`LICENSE`](LICENSE)).
-
-- The prebuilt binaries in `tests/riscv-tests/` come from the [riscv-software-src/riscv-tests](https://github.com/riscv-software-src/riscv-tests) suite (BSD-3-Clause).
-- The kernel's overall structure follows the teaching design popularised by MIT's [xv6](https://github.com/mit-pdos/xv6-riscv); the code here is original.
-- The memory map follows QEMU's `virt` machine, and the privileged behaviour follows the RISC-V ISA specifications.
-- Belady's optimal page-replacement algorithm: L. A. Belady, *A study of replacement algorithms for a virtual-storage computer*, IBM Systems Journal, 1966.
-
-<div align="center"><sub>Siliscope: emulate, boot, measure.</sub></div>
